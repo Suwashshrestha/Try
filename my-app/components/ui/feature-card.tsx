@@ -44,7 +44,10 @@ export function FeatureCard({ type, title, points, position }: FeatureCardProps)
           isActive && "text-primary"
         )}
       >
-        <div className="relative z-10">
+        <div className={cn(
+          "relative z-10 flex flex-col",
+          (type === "dynamic_paths" || type === "ai_mentor") ? "items-end" : "items-start"
+        )}>
           <Image
             src={iconPath}
             alt={`${type} icon`}
