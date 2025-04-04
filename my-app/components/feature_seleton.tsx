@@ -1,6 +1,6 @@
 export function FeaturesSkeleton() {
     return (
-      <div className=" grid grid-cols-2 grid-rows-2 w-full h-full  ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-[650px] w-full mx-auto">
         {[...Array(4)].map((_, i) => (
           <div
             key={i}
