@@ -25,13 +25,13 @@ export function FeatureCard({ type, title, points, position }: FeatureCardProps)
   const getPointsPosition = () => {
     switch (position) {
       case "top-left":
-        return "left-full top-20 ml-25";
+        return "left-full top-20 ml-4 md:ml-6 lg:ml-15";
       case "top-right":
-        return "right-full top-20 mr-25";
+        return "right-full top-20 mr-4 md:mr-6 lg:mr-15";
       case "bottom-left":
-        return "left-full bottom-20 ml-25";
+        return "left-full bottom-20 ml-4 md:ml-6 lg:ml-15";
       case "bottom-right":
-        return "right-full bottom-20 mr-25";
+        return "right-full bottom-20 mr-4 md:mr-6 lg:mr-15";
     }
   };
 
@@ -67,7 +67,7 @@ export function FeatureCard({ type, title, points, position }: FeatureCardProps)
       {/* Points Container */}
       <div
         className={cn(
-          "absolute z-50 min-w-[280px] opacity-0 scale-95 transition-all duration-200",
+          "absolute z-50 min-w-[345px] opacity-0 scale-95 transition-all duration-200",
           isActive && "opacity-100 scale-100",
           getPointsPosition()
         )}
